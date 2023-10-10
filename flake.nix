@@ -2,7 +2,7 @@
   description = "Phoenix Liveview Workspace";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/2f3b6b3fcd9f";
+    nixpkgs.url = "github:NixOS/nixpkgs";
     utils.url = "github:numtide/flake-utils";
     compat.url = "github:nix-community/flake-compat";
   };

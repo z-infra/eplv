@@ -3,7 +3,7 @@ with pkgs;
 with builtins;
 
 mkShell {
-  buildInputs = [ elixir_1_15 nodejs_20 postgresql_15 git ]
+  buildInputs = [ elixir_1_15 nodejs_20 postgresql_16 git ]
     ++ (if stdenv.isLinux || stdenv.isCygwin then [ inotify-tools ] else [ ]);
   shellHook = ''
     # Artifacts folder

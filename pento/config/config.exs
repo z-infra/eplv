@@ -61,6 +61,13 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+# os_mon config
+config :os_mon,
+  disk_space_check_interval: 1,
+  memory_check_interval: 5,
+  disk_almost_full_threshold: 0.90,
+  start_cpu_sup: true
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

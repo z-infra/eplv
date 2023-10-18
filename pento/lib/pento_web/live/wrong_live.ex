@@ -74,7 +74,7 @@ defmodule PentoWeb.WrongLive do
       <%= if @win do %>
         <h1>
           You Win!!!<br>
-          <span><%= live_patch "Reset", to: "/guess", reset: true %></span>
+          <.link patch={~p"/guess"}>Reset</.link>
         </h1>
       <% end %>
     """
